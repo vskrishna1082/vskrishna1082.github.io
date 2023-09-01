@@ -28,18 +28,40 @@
 				display: block;
 			}
 
+			.sim_summary {
+				margin: auto;
+				padding-bottom: 20px;
+				width: 70%;
+				font-size: 14px;
+				display: block;
+			}
+
 		</style>
 	</head>
 	<body>
 		<div class="center">
 			<img class="title" src="images/title.svg" width=40% alt="The Northern Shack"></img>
-			Personal Webpage of V S Krishna Iyer. Currently just a demo ground for some simulations. Best viewed on Firefox for desktop.
+			Personal Webpage of V S Krishna Iyer and a demo ground for some simulations. Best viewed on Firefox desktop.
 
 			<ul style="list-style-type:disc;">
 				<li>Brazil Nut Effect (Python)</li>
 				 <video class="imgcentre" autoplay loop muted>
-				  <source src="images/brazil-nut.mp4" type="video/mp4">
+				  <source src="images/brazil_nut.mp4" type="video/mp4">
 				</video> 
+				<div class= "sim_summary">
+				When objects of different sizes are mixed and subjected to shaking, the larger objects tend to rise to the top, leaving the smaller ones at the bottom. This produces a density gradient (or, more accurately, a 'packing gradient') - with the lower part of the container densely packed.
+				</div>
+
+				<li>Phase Separation (C++ and Phyton)</li>
+				 <video class="imgcentre" autoplay loop muted width=300px>
+				  <source src="images/lj_ps.mp4" type="video/mp4">
+				</video> 
+				 <video class="imgcentre" autoplay loop muted width=300px>
+				  <source src="images/lj_noc.mp4" type="video/mp4">
+				</video> 
+				<div class= "sim_summary">
+					The lennard-jones potential contains two tunable parameters - σ and ϵ. σ controls the size of the particles, while ϵ adjusts the depth of the well. Setting up the system such that particles of the same colour attract each other, we observe phase separation. A 'control' system of identical (but differetly) coloured particles is show what happens if the attractive force were absent.
+				</div>
 			</ul>  
 		</div>
 	</body>
