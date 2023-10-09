@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Northern Shack:Phase Separation</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Libre+Baskerville&family=PT+Serif&display=swap');
+
+			body {
+				font-family: 'Libre Baskerville', serif;
+			}
+
+			.center {
+			  margin: auto;
+			  width: 60%;
+			  display: block;
+			  <!-- padding: 10px; -->
+			}
+
+			.title {
+				padding-bottom: 30px;
+				margin: auto;
+				display: block;
+			}
+
+			.imgcentre {
+				padding: 10px;
+				margin: auto;
+				display: block;
+			}
+
+			.sim_summary {
+				margin: auto;
+				padding-bottom: 20px;
+				width: 70%;
+				font-size: 14px;
+				display: block;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="center">
+			<img class="title" src="../images/title.svg" width=40% alt="The Northern Shack"></img>
+				 <video class="imgcentre" autoplay loop muted width=300px>
+				  <source src="../images/lj_ps.mp4" type="video/mp4">
+				</video> 
+				 <video class="imgcentre" autoplay loop muted width=300px>
+				  <source src="../images/lj_noc.mp4" type="video/mp4">
+				</video> 
+				<div class= "sim_summary">
+					The lennard-jones potential contains two tunable parameters - σ and ϵ. σ controls the size of the particles, while ϵ adjusts the depth of the well. Setting up the system such that particles of the same colour attract each other, we observe phase separation. A 'control' system of identical (but differetly) coloured particles is show what happens if the attractive force were absent.
+				</div>
+	</body>
+</html>

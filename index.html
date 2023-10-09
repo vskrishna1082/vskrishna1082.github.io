@@ -16,6 +16,11 @@
 			  <!-- padding: 10px; -->
 			}
 
+			a {
+				color: navy;
+				text-decoration: none;
+			}
+
 			.title {
 				padding-bottom: 30px;
 				margin: auto;
@@ -36,34 +41,60 @@
 				display: block;
 			}
 
+			.grid-container {
+					display:grid;
+					grid-template-columns: repeat(2, 1fr);
+					grid-column-gap: 1em;
+					grid-row-gap: 1em;
+					padding: 20px;
+				  grid-auto-rows: 1fr
+			}
+
+			.grid-item {
+				  display:grid;
+					height: 90%;
+					width: 90%;
+					text-align: center;
+					border: 1px solid rgba(0,0,0,1);
+					padding: 20px;
+			}
+
+			.thumb-image {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+			}
+
 		</style>
 	</head>
 	<body>
 		<div class="center">
 			<img class="title" src="images/title.svg" width=40% alt="The Northern Shack"></img>
-			Personal Webpage of V S Krishna Iyer and a demo ground for some simulations. Best viewed on Firefox desktop. If the similuations do not play, you can find them <a href="https://github.com/vskrishna1082/vskrishna1082.github.io/tree/main/images">in the github repository</a> and use your favourite media player to view them.
+			The personal webpage of V S Krishna Iyer and a demo ground for some simulations. Best viewed on Firefox desktop. If the similuations do not play, you can find them <a href="https://github.com/vskrishna1082/vskrishna1082.github.io/tree/main/images">in the github repository</a> and use your favourite media player to view them.
 
-			<ul style="list-style-type:disc;">
-				<li>Brazil Nut Effect (Python)</li>
-				 <video class="imgcentre" autoplay loop muted>
-				  <source src="images/brazil_nut.mp4" type="video/mp4">
-				  <source src="images/brazil_nut.webm" type="video/webm">
-				</video> 
-				<div class= "sim_summary">
-				When objects of different sizes are mixed and subjected to shaking, the larger objects tend to rise to the top, leaving the smaller ones at the bottom. This produces a density gradient (or, more accurately, a 'packing gradient') - with the lower part of the container densely packed.
+		<div class="grid-container">
+			<a  href="simulations/brazil_nut.html">
+				<div class="grid-item">
+					<p>Brazil Nut Effect</p>
+					<img src="images/Brazil_Nut_Collated.png" class="thumb-image"/>
 				</div>
-
-				<li>Phase Separation (C++ and Python)</li>
-				 <video class="imgcentre" autoplay loop muted width=300px>
-				  <source src="images/lj_ps.mp4" type="video/mp4">
-				</video> 
-				 <video class="imgcentre" autoplay loop muted width=300px>
-				  <source src="images/lj_noc.mp4" type="video/mp4">
-				</video> 
-				<div class= "sim_summary">
-					The lennard-jones potential contains two tunable parameters - σ and ϵ. σ controls the size of the particles, while ϵ adjusts the depth of the well. Setting up the system such that particles of the same colour attract each other, we observe phase separation. A 'control' system of identical (but differetly) coloured particles is show what happens if the attractive force were absent.
+			</a>
+			<a  href="simulations/phase_sep.html">
+				<div class="grid-item">
+					<p>Phase Separation (MD)</p>
+					<img src="images/ps_thumb.png" class="thumb-image"/>
 				</div>
-			</ul>  
+			</a>
+			<a  href="simulations/llps_mc.html">
+				<div class="grid-item">
+					<p>Lattice Phase Separation</p>
+					<img src="images/latticemodel_thumb.png" class="thumb-image"/>
+				</div>
+			</a>
+		  <div class="grid-item">4</div>
+		  <div class="grid-item">5</div>
+		  <div class="grid-item">6</div>
+		</div>
 		</div>
 	</body>
 </html>
