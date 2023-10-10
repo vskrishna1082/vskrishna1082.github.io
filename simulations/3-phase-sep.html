@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Northern Shack:Three Kinds</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Libre+Baskerville&family=PT+Serif&display=swap');
+
+			body {
+				font-family: 'Libre Baskerville', serif;
+			}
+
+			.center {
+			  margin: auto;
+			  width: 60%;
+			  display: block;
+			  <!-- padding: 10px; -->
+			}
+
+			.title {
+				padding-bottom: 30px;
+				margin: auto;
+				display: block;
+			}
+
+			.imgcentre {
+				padding: 10px;
+				margin: auto;
+				display: block;
+			}
+
+			.sim_summary {
+				margin: auto;
+				padding-bottom: 20px;
+				width: 70%;
+				font-size: 14px;
+				display: block;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="center">
+			<img class="title" src="../images/title.svg" width=40% alt="The Northern Shack"></img>
+				 <video class="imgcentre" autoplay loop muted>
+				  <source src="../images/3-phase-lj.mp4" type="video/mp4">
+				</video> 
+				<div class= "sim_summary">
+					An attempt at modelling the phase separation behaviour of a triphasic system. The organization of the nucleolus, for example, is a result of phase separation of three mutually phase separating components. The simulation, however, doesn't seem to reflect much to the naked eye, the RDF is less hopeless. I reckon the interaction parameters might require a bit more tweaking before the result is as expected.
+		</div>
+			<img class="imgcentre" src="../images/graph_rdf_3phase.png" width=40% alt="Thre particles RDF"></img>
+	</body>
+</html>
+
