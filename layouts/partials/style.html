@@ -14,6 +14,20 @@
       format('woff2');
   }
 
+  @font-face {
+    font-family: 'Anaheim';
+    src: url('/fonts/variable/Anaheim-VariableFont_wght.ttf')
+      format('truetype');
+  }
+
+  /* Lighter bold fonts */
+  @font-face {
+    font-family: 'Anaheim';
+    font-weight: 700;
+    src: url('/fonts/static/Anaheim-SemiBold.ttf')
+      format('truetype');
+  }
+
   body {
     font-family: Verdana, sans-serif;
     margin: auto;
@@ -32,8 +46,9 @@
   }
 
   main {
-    font-family: Jetbrains Mono, Noto Sans, sans;
-    font-size: 16px;
+    font-family: Anaheim, Noto Sans, sans;
+    font-size: 18px;
+    font-weight: 500;
     color: #101010;
   }
 
@@ -148,7 +163,7 @@
     margin-top: 25px;
     text-align: center;
     color: #808080;
-    font-family: monospace, sans;
+    font-family:Anaheim;
   }
 
   .helptext {
@@ -183,55 +198,7 @@
     line-height:1.1em;
   }
 
-    Photo2_cropped.jpeg
-
-  /*@media (prefers-color-scheme: dark) {*/
-  /*  body {*/
-  /*    background-color: #333;*/
-  /*    color: #ddd;*/
-  /*  }*/
-  /**/
-  /*  h1,*/
-  /*  h2,*/
-  /*  h3,*/
-  /*  h4,*/
-  /*  h5,*/
-  /*  h6,*/
-  /*  strong,*/
-  /*  b {*/
-  /*    color: #eee;*/
-  /*  }*/
-  /**/
-  /*  a {*/
-  /*    color: #8cc2dd;*/
-  /*  }*/
-  /**/
-  /*  .navbar hr {*/
-  /*    border-top: 2px solid #dfdfdf;*/
-  /*  }*/
-  /**/
-  /**/
-  /*  code {*/
-  /*    background-color: #777;*/
-  /*  }*/
-  /**/
-  /*  pre code {*/
-  /*    color: #ddd;*/
-  /*  }*/
-  /**/
-  /*  blockquote {*/
-  /*    color: #ccc;*/
-  /*  }*/
-  /**/
-  /*  textarea,*/
-  /*  input {*/
-  /*    background-color: #252525;*/
-  /*    color: #ddd;*/
-  /*  }*/
-  /**/
-  /*  .helptext {*/
-  /*    color: #aaa;*/
-  /*  }*/
-  /*}*/
+  @media (prefers-color-scheme: dark) {
+  }
 
 </style>
