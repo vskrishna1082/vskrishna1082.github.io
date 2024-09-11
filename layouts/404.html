@@ -2,11 +2,25 @@
 
 {{ define "main" }}
 <p> <b>404:</b> The link you were visiting was observed—but alas, it is dead!</p>
-<div align="center" class="asciicat">
-	<pre>
+<div id="dead-cat" style="display:inline">
+	<div align="center" class="asciicat">
+		<pre>
 /\_/\
 ( x.x )
 > ^ <
-	</pre>
+		</pre>
+	</div>
 </div>
+<div id="living-cat" style="display:none">
+	<div align="center" class="asciicat">
+		<pre>
+/\_/\
+( ^-^ )
+> ⌣ <
+		</pre>
+	</div>
+	<p> Oh look, the cat is alive! </p>
+</div>
+{{ $javascript := resources.Get "js/schrodinger.js" | resources.Minify }}
+<script type="text/javascript" src="{{ $javascript.Permalink }}"></script>
 {{ end }}
