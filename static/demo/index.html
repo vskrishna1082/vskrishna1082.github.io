@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Northern Shack</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Libre+Baskerville&family=PT+Serif&display=swap');
+
+			body {
+				font-family: 'Libre Baskerville', serif;
+			}
+
+			.center {
+			  margin: auto;
+			  width: 60%;
+			  display: block;
+			  <!-- padding: 10px; -->
+			}
+
+			a {
+				color: navy;
+				text-decoration: none;
+			}
+
+			.title {
+				padding-bottom: 30px;
+				margin: auto;
+				display: block;
+			}
+
+			.imgcentre {
+				padding: 10px;
+				margin: auto;
+				display: block;
+			}
+
+			.sim_summary {
+				margin: auto;
+				padding-bottom: 20px;
+				width: 70%;
+				font-size: 14px;
+				display: block;
+			}
+
+			.grid-container {
+					display:grid;
+					grid-template-columns: repeat(2, 1fr);
+					grid-column-gap: 1em;
+					grid-row-gap: 1em;
+					padding: 20px;
+				  grid-auto-rows: 1fr
+			}
+
+			.grid-item {
+				  display:grid;
+					height: 90%;
+					width: 90%;
+					text-align: center;
+					border: 1px solid rgba(0,0,0,1);
+					padding: 20px;
+			}
+
+			.thumb-image {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="center">
+			<img class="title" src="images/title.svg" width=40% alt="The Northern Shack"></img>
+			The personal webpage of V S Krishna Iyer and a demo ground for some simulations. Best viewed on Firefox desktop. If the similuations do not play, you can find them <a href="https://github.com/vskrishna1082/vskrishna1082.github.io/tree/main/images">in the github repository</a> and use your favourite media player to view them.
+
+		<div class="grid-container">
+			<a  href="simulations/brazil_nut.html">
+				<div class="grid-item">
+					<p>Brazil Nut Effect</p>
+					<img src="images/Brazil_Nut_Collated.png" class="thumb-image"/>
+				</div>
+			</a>
+			<a  href="simulations/phase_sep.html">
+				<div class="grid-item">
+					<p>Phase Separation (MD)</p>
+					<img src="images/ps_thumb.png" class="thumb-image"/>
+				</div>
+			</a>
+			<a  href="simulations/llps_mc.html">
+				<div class="grid-item">
+					<p>Lattice Phase Separation</p>
+					<img src="images/latticemodel_thumb.png" class="thumb-image"/>
+				</div>
+			</a>
+			<a  href="simulations/protein_min.html">
+				<div class="grid-item">
+					<p>LAMMPS Polymer</p>
+					<img src="images/polymer-min-thumb.png" class="thumb-image"/>
+				</div>
+			</a>
+			<a  href="simulations/3-phase-sep.html">
+				<div class="grid-item">
+					<p>Triphasic LLPS</p>
+					<img src="images/3-phase-sep.png" class="thumb-image"/>
+				</div>
+			</a>
+			<a  href="simulations/2d-polymer.html">
+				<div class="grid-item">
+					<p>Simple 2-D Polymer</p>
+					<img src="images/2d-polymer.png" class="thumb-image"/>
+				</div>
+			</a>
+		</div>
+		</div>
+	</body>
+</html>

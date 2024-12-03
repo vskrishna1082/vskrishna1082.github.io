@@ -196,5 +196,10 @@ ul.blog-posts li a:visited {
   line-height:1.1em;
 }
 
+.footnotes {
+  color: #696969;
+  font-size: 16px;
+}
+
 @media (prefers-color-scheme: dark) {
 }

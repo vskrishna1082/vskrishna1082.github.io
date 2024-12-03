@@ -3,3 +3,4 @@ languageCode = 'en-us'
 title = 'The Northern Shack'
 [Params]
 subtitle = "The Personal Webpage of V S Krishna Iyer"
+hideMadeWithLine = true
